@@ -5,63 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>departement des mathematiques / FS / UMBB </title>
     <link rel="icon" type="image" href="images/photo_2026-07-14_23-49-48.jpg">
+
+    <!-- Remarque : La balise <header> doit être placée dans <body> et non dans <head>. -->
     <header>
-        <h1>Fiche de voeux L2   Année universitaire 2026-2027</h1>
+        <h1>Fiche de voeux L2 Année universitaire 2026-2027</h1>
     </header>
 </head>
+
 <body>
+
+    <!-- Remarque : Tous les champs devraient être placés à l'intérieur d'une balise <form>. -->
+
     <label>Email :</label>
     <input type="email" name="Email" placeholder="saisissez votre email"> <br>
+
     <label>Nom et prenom :</label>
     <input type="text" name="Nom" placeholder="saisissez votre nom"> <br>
+
     <label>Numéro de téléphone :</label>
     <input type="text" name="numero de telephone" placeholder="saisissez votre numéro de téléphone"> <br>
+
     <label>Matricule :</label>
     <input type="text" name="matricule" placeholder="saisissez votre matricule"> <br>
+
     <label>Mot de passe :</label>
     <input type="password" name="Mot de passe" placeholder="saisissez votre mot de passe"> <br>
+
     <label>Âge :</label>
-    <input type="number" name="Âge" placeholder="saisissez votre âge"> <br>
+    <input type="number" name="Âge" placeholder="saisissez votre âge">
+    <br>
+
     <label>Date de naissance :</label>
     <input type="date" name="Date de naissance"> <br>
+
     <label>Couleur préférée :</label>
     <input type="color" name="Couleur préférée"> <br>
+
     <label>Volume :</label>
     <input type="range" name="Volume" min="0" max="100"> <br>
+
     <label>Photo personnelle :</label>
     <input type="file" name="Fichier"> <br>
+
     <label>Choisissez (les deux filieres) par ordre de propriete souhaite :</label><br>
+
     <h4>Choix 01</h4><br>
+
     <input type="radio" name="Filiere01" value="Mathematiques"> Mathematiques <br>
-    <input type="radio" name="Filiere01" value="Mathematiques  appliquees"> Mathematiques  appliquees <br>
+    <input type="radio" name="Filiere01" value="Mathematiques appliquees"> Mathematiques appliquees <br>
+
     <h4>Choix 02</h4><br>
+
     <input type="radio" name="Filiere02" value="Mathematiques"> Mathematiques <br>
-    <input type="radio" name="Filiere02" value="Mathematiques  appliquees"> Mathematiques  appliquees <br>
+    <input type="radio" name="Filiere02" value="Mathematiques appliquees"> Mathematiques appliquees <br>
+
     <label>Choisissez vos centres d'intérêt :</label><br>
+
     <input type="checkbox" name="Centres d'intérêt" value="analyse"> Analyse <br>
     <input type="checkbox" name="Centres d'intérêt" value="Algebre"> Algebre <br>
     <input type="checkbox" name="Centres d'intérêt" value="structure machine"> Structure machine <br>
     <input type="checkbox" name="Centres d'intérêt" value="algorithmique et structure des données"> Algorithmique et structure des données <br>
+
+    <!-- Remarque : Il y a une petite erreur de syntaxe dans cette ligne (</label> en trop). -->
     <label>Tu as revu tes choix</label> :</label><br>
-    <select name="confirmation" placeholder="--choisissez--" >
+
+    <select name="confirmation" placeholder="--choisissez--">
+        <!-- Remarque : Le placeholder n'est pas utilisé avec la balise <select>. Il est préférable d'ajouter une option "--Choisissez--". -->
         <option value="oui">oui</option>
         <option value="non">non</option>
     </select><br>
+
     <label>Pourqoi tu as choisi cette filieres ?</label><br>
     <textarea name="opinion" placeholder="érivez ici..."></textarea><br>
-    <button type="submit">Envoyer</button><button type="reinitialiser">Annuler</button>
+
+    <button type="submit">Envoyer</button>
+
+    <button type="reinitialiser">Annuler</button>
+    <!-- Remarque : Le type "reinitialiser" n'existe pas. Il faut utiliser type="reset". -->
+
     <h4>Image</h4><br>
+
     <figure>
         <img src="images/a1f17ccb307676f90ca286a15e75e5f3.png" alt="img" width="100" height="100">
         <figcaption>Exemple d'image</figcaption>
     </figure>
+
     <h4>Audio</h4><br>
+
     <audio src="media/audio.ogg" controls></audio>
+
     <h4>Video</h4><br>
+
     <video controls width="300" preload="metadata">
-    <source src="media/photography01.mp4" type="video/mp4">
+        <source src="media/photography01.mp4" type="video/mp4">
     </video>
+
     <h4>Liste des inscrits</h4><br>
+
     <table border="1">
         <thead>
             <tr>
@@ -70,12 +110,14 @@
                 <th>Filiere</th>
             </tr>
         </thead>
+
         <tbody>
             <tr>
                 <td>Nada</td>
                 <td>narma9701@gmail.com</td>
                 <td>Mathemathiques appliquee</td>
             </tr>
+
             <tr>
                 <td>Manar</td>
                 <td>manar@example.com</td>
@@ -83,6 +125,12 @@
             </tr>
         </tbody>
     </table>
+
+
+    <!-- Félicitations !
+         Très bon travail ! Vous avez personnalisé le sujet en créant une fiche de vœux originale et vous avez intégré la majorité des éléments demandés (formulaire, image, audio, vidéo et tableau).
+         Les quelques remarques ci-dessus vous permettront d'améliorer davantage votre travail et de respecter parfaitement les bonnes pratiques HTML.
+         Continuez ainsi, vos efforts sont visibles. Bon courage pour la suite !  -->
 
 </body>
 </html>
